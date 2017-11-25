@@ -2,7 +2,7 @@
   "name": "escape-room",
   "version": "0.0.0",
   "license": "MIT",
-  "enignes": {
+  "engines": {
     "node": "9.1.0",
     "npm": "5.5.1"
   },
@@ -12,7 +12,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
